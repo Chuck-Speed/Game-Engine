@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="FooTest.cpp" />
+    <ClCompile Include="SListTest.cpp" />
+    <ClCompile Include="VectorTest.cpp" />
+    <ClCompile Include="..\Library.Desktop\Foo.cpp" />
+    <ClCompile Include="StackTest.cpp" />
+    <ClCompile Include="HashmapTest.cpp" />
+    <ClCompile Include="DatumTest.cpp" />
+    <ClCompile Include="ScopeTest.cpp" />
+    <ClCompile Include="AttributedTest.cpp" />
+    <ClCompile Include="XMLParseTest.cpp" />
+    <ClCompile Include="XMLParseHelperFoo.cpp" />
+    <ClCompile Include="FactoryTest.cpp" />
+    <ClCompile Include="FooEntity.cpp" />
+    <ClCompile Include="FooAction.cpp" />
+    <ClCompile Include="EventTest.cpp" />
+    <ClCompile Include="FooSubscriber.cpp" />
+    <ClCompile Include="ReactionTest.cpp" />
+    <ClCompile Include="ActionTest.cpp" />
+    <ClCompile Include="EntityTest.cpp" />
+    <ClCompile Include="EMASubscriber.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="..\Library.Desktop\Foo.h" />
+    <ClInclude Include="XMLParseHelperFoo.h" />
+    <ClInclude Include="FooEntity.h" />
+    <ClInclude Include="FooAction.h" />
+    <ClInclude Include="FooSubscriber.h" />
+    <ClInclude Include="EMASubscriber.h" />
+  </ItemGroup>
+</Project>

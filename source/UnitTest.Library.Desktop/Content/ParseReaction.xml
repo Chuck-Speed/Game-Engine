@@ -1,0 +1,21 @@
+<World name = "MyWorld">
+	<Sector name = "Sector1">
+		<Entity class = "FooEntity" instanceName = "first">
+			<Action class = "ActionEvent" instanceName = "DoTheThing">
+				<String name = "Subtype" value = "TheThing"/>
+				<Integer name = "RandomInt" value = "8"/>
+			</Action>
+			<Reaction class = "ReactionAttributed" subType = "TheThing">
+				<Action class = "ActionListIf" instanceName = "ReactionIf">
+					<Integer name = "Condition" value="1"/>
+					<then>
+						<Action class = "FooAction" instanceName = "then"/>
+					</then>
+					<else>
+						<Action class = "FooAction" instanceName = "else"/>
+					</else>
+				</Action>
+			</Reaction>
+		</Entity>
+	</Sector>
+</World>

@@ -1,0 +1,26 @@
+<World name = "MyWorld">
+	<Sector name = "Sector1">
+		<Entity class = "FooEntity" instanceName = "first">
+			<Integer name = "number" value = "1" index = "0"/>
+		</Entity>
+	</Sector>
+	<Sector name = "Sector2">
+		<Entity class = "FooEntity" instanceName = "second"/>
+		<Entity class = "FooEntity" instanceName = "third">
+			<Float name = "Thing1" value = "1.0" index = "0"/>
+			<Integer name = "Thing2" value = "2" index = "1"/>
+			<String name = "mFoo" value = "FooBar"/>
+			<Vector name = "myVector" value = "1.0 2.0 3.0 4.0"/>
+			<Matrix name = "myMatrix" value = "1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0"/>
+			<Action class = "ActionListIf" instanceName = "LightsCameraAction">
+				<Integer name = "Condition" value="1"/>
+				<then>
+					<Action class = "FooAction" instanceName = "then"/>
+				</then>
+				<else>
+					<Action class = "FooAction" instanceName = "else"/>
+				</else>
+			</Action>
+		</Entity>
+	</Sector>
+</World>
